@@ -9,6 +9,7 @@ import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 
 import { useRouter } from 'next/router';
+import { red } from '@mui/material/colors';
 
 interface NavbarElement {
   href: string;
@@ -18,9 +19,12 @@ interface NavbarElement {
 
 function navbarElements() {
     return [
-      { 'href': '/generate', 'text': 'New Email' },
-      { 'href': '/login', 'text': 'Login' },
-      { 'href': '/register', 'text': 'Register' },
+      { 'href': '/generate', 'text': 'About Us' },
+      { 'href': '/login', 'text': 'Get Involved' },
+      { 'href': '/register', 'text': 'Events' },
+      { 'href': '/register', 'text': 'Guides' },
+      { 'href': '/register', 'text': 'Board' },
+      { 'href': '/register', 'text': 'Contact' },
     ];
 }
 
@@ -46,17 +50,15 @@ const NavbarButton = ({ href, text }: NavbarElement) => {
 
 const Navbar = () => {
 
-
-
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{background:'#c14747'}}>
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           <Link href="/" passHref>
-            <Button color="inherit">Home</Button>
+            <Button color={"inherit"}>Home</Button>
           </Link>
         </Typography>
-        <Box>
+        <Box color={'white'}>
           {navbarElements().map((element) => NavbarButton(element))}
         </Box>
       </Toolbar>
