@@ -5,7 +5,7 @@ import Layout from '../components/layout';
 
 
 const Home = () => {
-  return <Layout>Loading...</Layout>;
+  return <Layout>...</Layout>;
 };
 
 export default Home;

@@ -51,7 +51,7 @@ const NavbarButton = ({ href, text }: NavbarElement) => {
 const Navbar = () => {
 
   return (
-    <AppBar position="static" sx={{background:'#c14747'}}>
+    <AppBar position="static" sx={{background:'#ab2022'}}>
       <Toolbar>
         <Typography variant="h3" component="div" sx={{ flexGrow: 1 }}>
           <Link href="/" passHref>
